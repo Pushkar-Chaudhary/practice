@@ -22,6 +22,7 @@
                     <div class="task w-72 px-4 py-4 rounded-md bg-zinc-800 shadow-md">
                         <h1 class="text-white text-2xl tracking-tight mb-2"><%= file %></h1>
                         <a href="/task/<%= encodeURIComponent(file) %>" class="text-blue-500">Read More</a>
+                        <a href="/edit/<%= encodeURIComponent(file) %>" class="text-blue-500 ml-2">Edit</a>
                     </div>
                 <% }) %>
             <% } else { %>
